@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Guugle</title>
+</head>
+<body>
+
+<h1>Your query</h1>
+<FORM action="/" method="get">
+<INPUT type="text" name="search"><br />
+<INPUT type="submit">
+</FORM>
+
+{% if termos %}
+<h1>Resultados da busca</h1>
+<h2>Termos: {{termos}}</h2>
+
+{% for info in results %}
+<div style="padding: 10px; background-color:#909592; margin: 20px">
+    <a href="{{info}}"><p style="font-size: 24px">{{ info }}</p></a>
+</div>
+{% endfor %}
+
+{% endif %}
+</body>
+</html>
