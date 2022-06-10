@@ -127,8 +127,3 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
-
-# Caches das redes
-rede_neural_lstm
-rede_neural_simples
-rede
